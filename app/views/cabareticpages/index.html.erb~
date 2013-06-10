@@ -1,0 +1,46 @@
+<script>
+function OpenDialog(info) {
+
+if (info == 'about'){
+$("#aboutinfo").dialog({ 
+resizable: false,
+modal: true
+});
+}
+else{
+$("#contactinfo").dialog({ 
+resizable: false,
+modal: true 
+});
+}
+
+}
+
+</script>
+
+<div id="headimagecontainer"> 
+<img id="headimage" src="/assets/header.png">
+</div>
+<div class="container_12">
+	<div class="grid_3">
+		<div id="aboutslider">
+			<img class="linkimage" src="/assets/about.png" onclick="OpenDialog('about')">
+				<div id="aboutinfo" title="About Cabaretic" style="display: none;">
+				<p>Cabaretic is Kevin Camp, a musician and blogger in Washington, DC. He is a man, guitar, and voice.  He has an engagingly lo-fi, no-frills approach to music.  Cabaretic records all his vocals and instruments with one computer microphone. He <a href="http://www.dailykos.com/blog/cabaretic">blogs frequently</a> for Daily Kos.</p>
+				</div>
+		</div>
+		<div id="contactslider">
+			<img class="linkimage" src="/assets/contact.png" onclick="OpenDialog('contact')">
+				<div id="contactinfo" title="Contact Cabaretic" style="display: none;">
+				<p>Contact Kevin at
+<a href="mailto:cabaretic@gmail.com">cabaretic@gmail.com</a></p>
+				</div>
+		</div>
+			
+	</div>	
+	<div class="grid_9">
+		<iframe src="http://www.youtube.com/embed/videoseries?list=UUL1zaM-9tlSlXDdS1dOW8MQ" 
+width="550" height="385" frameborder="0"></iframe>
+	</div>
+	
+</div>

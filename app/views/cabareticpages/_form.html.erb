@@ -1,0 +1,17 @@
+<%= form_for(@cabareticpage) do |f| %>
+  <% if @cabareticpage.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cabareticpage.errors.count, "error") %> prohibited this cabareticpage from being saved:</h2>
+
+      <ul>
+      <% @cabareticpage.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
